@@ -1,0 +1,102 @@
+@import "styles/Mixins";
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.header__title {
+  background-color:var(--grey_light);
+}
+
+.header__title_block {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title_block_contacts{
+  display: flex;
+
+  &_region {
+    margin-right: 30px;
+
+    &_tel {
+      @include link-reset;
+      color: var(--secondary);
+    }
+  }
+}
+
+.header__title_nav {
+  @include reset-list;
+  display: flex;
+
+  &_item:not(:last-child) {
+    margin-right: 54px;
+  }
+
+  &_link {
+    @include link-reset;
+    color: var(--grey);
+  }
+}
+
+.header__main {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+
+  &_navigate {
+    width: 100%;
+  }
+
+  &_logo {
+    margin-right: 141px;
+  }
+  &_list {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_link {
+      @include link-reset;
+     color: var(--black);
+    }
+  }
+}
+
+.header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_user {
+    @include btn-reset;
+    margin-right: 32px;
+  }
+
+  &_basket {
+    @include btn-reset;
+
+    display: flex;
+    align-items: center;
+
+    &_count {
+      margin-right: -10px;
+      line-height: 20px;
+      width: 20px;
+      height: 20px;
+      font-size: 13px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: var(--secondary);
+    }
+  }
+}
+
+.header__bottom_btn_wrapper {
+  display: flex;
+  align-items: center;
+}
