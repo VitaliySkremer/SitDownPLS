@@ -1,5 +1,7 @@
 html {
   --primary: #A65CF0;
+  --primary-light: #C998FB;
+  --primary-dark: #7033AC;
   --grey: grey;
   --black: #333333;
   --secondary: #FF862F;
@@ -29,6 +31,10 @@ body {
   max-width: 1480px;
   padding: 0 100px;
   margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 70px;
 }
 
 /*# sourceMappingURL=globals.css.map */

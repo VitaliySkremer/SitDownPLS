@@ -1,10 +1,13 @@
 import {Meta} from "../Meta/utils/Meta";
+import {Hero} from "../Components/Hero/Hero";
+import {Special} from "../Components/Special/Special";
 
 export default function Main() {
   return (
-    <div className='container'>
+    <main>
       <Meta title='Главная' description='описание'/>
-      main
-    </div>
+      <Hero/>
+      <Special/>
+    </main>
   )
 }

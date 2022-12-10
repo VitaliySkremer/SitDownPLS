@@ -69,7 +69,8 @@
 
 .dropdown__btn {
   @include btn-reset;
-
+  position: relative;
+  z-index: 20;
   height: 100%;
   width: 100%;
   display: flex;
@@ -84,6 +85,8 @@
   @include reset-list;
   column-count: 2;
   position: absolute;
+  z-index: 10;
+  background-color: var(--white);
   top: 50px;
   left: 0;
   border: 2px solid #F7F7F7;
