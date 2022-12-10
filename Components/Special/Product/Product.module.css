@@ -1,0 +1,64 @@
+.product {
+  padding: 50px 30px 30px;
+  background-color: var(--grey-light);
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+  max-height: 450px;
+  width: 100%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  margin: 0 0 23px;
+}
+
+.price__wrapper {
+  margin-bottom: 23px;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--secondary);
+  margin-right: 30px;
+}
+.price_old {
+  text-decoration-line: line-through;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--grey);
+}
+
+.sale {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 90px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+}
+.sale:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -14px;
+  border: 15px solid transparent;
+  border-left: 15px solid var(--secondary);
+  background-color: var(--grey-light);
+}
+
+/*# sourceMappingURL=Product.module.css.map */
