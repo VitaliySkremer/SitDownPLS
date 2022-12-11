@@ -38,4 +38,24 @@ body {
   margin-bottom: 70px;
 }
 
+.title {
+  align-self: start;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.floating-el:hover {
+  background-color: var(--primary);
+}
+.floating-el:hover svg path {
+  stroke: white;
+}
+.floating-el:active {
+  background-color: var(--primary-dark);
+}
+.floating-el:active svg path {
+  stroke: white;
+}
+
 /*# sourceMappingURL=globals.css.map */

@@ -1,0 +1,30 @@
+.collection {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.collections__main {
+  padding: 150px 100px;
+}
+
+.title {
+  max-width: 510px;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  color: var(--white);
+  margin: 0 0 49px;
+
+  &_desc {
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--white);
+    margin: 0;
+  }
+}
+
+.mark {
+  color: var(--gold);
+}
+

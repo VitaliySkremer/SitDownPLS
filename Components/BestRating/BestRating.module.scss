@@ -1,0 +1,15 @@
+@import "styles/Mixins.scss";
+.best__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  @include reset-list;
+  display: grid;
+  gap: 32px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 32px;
+}

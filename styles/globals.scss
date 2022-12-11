@@ -38,3 +38,26 @@ body {
 .section {
   margin-bottom: 70px;
 }
+
+.title {
+  align-self: start;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.floating-el {
+  &:hover {
+    background-color: var(--primary);
+    svg path {
+      stroke: white;
+    }
+  }
+
+  &:active {
+    background-color: var(--primary-dark);
+    svg path {
+      stroke: white;
+    }
+  }
+}
