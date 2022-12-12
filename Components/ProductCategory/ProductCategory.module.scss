@@ -1,0 +1,50 @@
+@import "styles/Mixins.scss";
+
+.product__wrapper {
+  border-radius: 10px;
+  background-color: var(--grey_light);
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.meta__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--grey);
+  display: inline-block;
+  margin: 0 30px 14px 0;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--black);
+  margin: 0 0 30px;
+}
+
+.img {
+  object-fit: cover;
+  transform: translateX(-30px);
+  display: block;
+  margin-bottom: auto;
+  max-width: 515px;
+  max-height: 308px;
+}
+
+.link {
+  @include link-reset;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--primary);
+
+  span {
+    margin-right: 5px;
+  }
+}

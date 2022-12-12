@@ -3,6 +3,7 @@ import {Hero} from "../Components/Hero/Hero";
 import {Special} from "../Components/Special/Special";
 import {BestRating} from "../Components/BestRating/BestRating";
 import {NewCollections} from "../Components/NewCollection/NewCollections";
+import {TopСategories} from "../Components/TopСategories/TopСategories";
 
 export default function Main() {
   return (
@@ -12,6 +13,7 @@ export default function Main() {
       <Special/>
       <BestRating/>
       <NewCollections/>
+      <TopСategories/>
     </main>
   )
 }
