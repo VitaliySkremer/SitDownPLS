@@ -17,7 +17,7 @@ const topListCategory:ITopCategory[] = [
 
 export const TopСategories = ()=> {
   return(
-    <section className={['section', 'container'].join(' ')}>
+    <section className='container section'>
       <h3 className='title'>Топ категории</h3>
       <ul className={styles.top__wrapper}>
           {topListCategory.map((item,index)=>

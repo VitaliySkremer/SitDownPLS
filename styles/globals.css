@@ -43,6 +43,7 @@ body {
   font-weight: 400;
   font-size: 32px;
   line-height: 100%;
+  margin: 0 0 26px;
 }
 
 .floating-el:hover {

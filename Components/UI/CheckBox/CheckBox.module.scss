@@ -1,0 +1,36 @@
+.label {
+  position: relative;
+}
+
+.input[type='checkbox']{
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+
+  &:checked + .label__text:before{
+    background-image: url("/img/icons/chekbox.svg");
+    background-size: cover;
+    border: none;
+    background-repeat: no-repeat;
+  }
+}
+
+.label__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  &:before {
+    margin-right: 8px;
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    border: 1px solid var(--grey);
+  }
+}

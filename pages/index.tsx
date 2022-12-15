@@ -4,6 +4,7 @@ import {Special} from "../Components/Special/Special";
 import {BestRating} from "../Components/BestRating/BestRating";
 import {NewCollections} from "../Components/NewCollection/NewCollections";
 import {TopСategories} from "../Components/TopСategories/TopСategories";
+import {FeedbackForm} from "../Components/FeedbackForm/FeedbackForm";
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
       <BestRating/>
       <NewCollections/>
       <TopСategories/>
+      <FeedbackForm/>
     </main>
   )
 }

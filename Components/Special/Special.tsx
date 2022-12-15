@@ -19,7 +19,7 @@ export const Special = () => {
   }, [swiperRef]);
 
   return (
-    <section className={['container','section'].join(' ')}>
+    <section className='container section'>
       <div className={styles.navigation}>
         <h3 className='title'>Специальные предложения</h3>
         <div className={styles.btn__wrapper}>
