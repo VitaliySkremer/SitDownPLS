@@ -32,6 +32,7 @@ body {
   max-width: 1480px;
   padding: 0 100px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .section {
@@ -57,6 +58,11 @@ body {
 }
 .floating-el:active svg path {
   stroke: white;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=globals.css.map */

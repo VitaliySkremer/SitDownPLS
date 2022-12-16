@@ -1,0 +1,66 @@
+@import "styles/Mixins.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--md_grey);
+}
+
+.footer__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--grey);
+  text-align: center;
+  padding: 5px 0;
+  background-color: var(--white);
+}
+
+.logo {
+  margin-bottom: 31px;
+  display: inline-block;
+}
+
+.social__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+
+  li:not(:last-child){
+    margin-right: 20px;
+  }
+}
+
+.link__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--black);
+  margin: 0 0 10px;
+}
+
+.list__links {
+  @include reset-list;
+
+  li:not(:last-child){
+    margin-bottom: 10px;
+  }
+
+  &_item {
+    @include link-reset;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--grey);
+  }
+}
+
