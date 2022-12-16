@@ -1,0 +1,23 @@
+@import "styles/Mixins.scss";
+
+.btn__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  @include btn-reset;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_prev {
+    margin-right: 13px;
+    svg {
+      transform: rotateZ(-180deg);
+    }
+  }
+}

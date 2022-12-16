@@ -1,0 +1,50 @@
+@import "styles/Mixins.scss";
+
+.card {
+  background-color: var(--grey_light);
+  border-radius: 10px;
+  min-height: 676px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  object-fit: cover;
+  max-height: 426px;
+}
+
+.card__body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  &_text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--black);
+    margin: 0;
+  }
+}
+
+.link {
+  @include link-reset;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  transition-property: color, background-color;
+  transition-timing-function: ease;
+  transition-duration: .2s;
+
+  &:hover {
+    background-color: var(--primary-light);
+    color: var(--white);
+  }
+
+  &:active {
+    background-color: var(--primary-dark);
+  }
+}
