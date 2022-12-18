@@ -24,6 +24,15 @@
     &_tel {
       @include link-reset;
       color: var(--secondary);
+      transition: color .2s ease;
+
+      &:hover {
+        color: var(--secondary-light);
+      }
+
+      &:active {
+        color: var(--secondary-shade);
+      }
     }
   }
 }
@@ -39,6 +48,14 @@
   &_link {
     @include link-reset;
     color: var(--grey);
+
+    &:hover {
+      color: var(--primary);
+    }
+
+    &:active {
+      color: var(--primary-dark);
+    }
   }
 }
 
@@ -63,6 +80,14 @@
     &_link {
       @include link-reset;
      color: var(--black);
+
+      &:hover {
+        color: var(--primary);
+      }
+
+      &:active {
+        color: var(--primary-dark);
+      }
     }
   }
 }

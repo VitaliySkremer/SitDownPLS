@@ -42,9 +42,18 @@
   line-height: 120%;
   outline: none;
   border-radius: 10px 0px 0px 10px;
+  transition: background-color .2s ease;
   &::placeholder {
     color: var(--grey);
     line-height: 120%;
+  }
+
+  &:hover {
+    background-color: var(--md_grey);
+  }
+
+  &:active {
+    color: var(--primary-dark);
   }
 }
 
@@ -78,7 +87,16 @@
   padding: 19px 32px;
   color: var(--primary);
   border: 2px solid var(--grey_light);
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
+  transition: border .2s ease;
+
+  &:hover {
+    border: 2px solid var(--primary);
+  }
+
+  &:active {
+    border: 2px solid var(--primary-dark);
+  }
 }
 
 .dropdown__list {

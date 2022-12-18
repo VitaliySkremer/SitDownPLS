@@ -73,4 +73,12 @@
   margin-right: 7px;
 }
 
+.bought__status {
+  display: flex;
+  justify-content: space-between;
+}
+.bought__status p {
+  color: var(--secondary);
+}
+
 /*# sourceMappingURL=Product.module.css.map */

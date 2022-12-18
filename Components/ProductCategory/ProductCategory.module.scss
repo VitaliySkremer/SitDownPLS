@@ -43,8 +43,33 @@
   font-size: 16px;
   line-height: 120%;
   color: var(--primary);
-
+  transition: color .2s ease;
+  width: fit-content;
   span {
+    display: flex;
+    flex-direction: column;
     margin-right: 5px;
+  }
+
+  span:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary);
+    transition: transform .2s ease;
+    transform: scale(0);
+  }
+
+  &:hover span:after{
+    transform: scale(1);
+  }
+
+  &:active {
+    color: var(--primary-dark);
+  }
+
+  &:active span:after{
+    transform: scale(1);
+    background-color: var(--primary-dark);
   }
 }

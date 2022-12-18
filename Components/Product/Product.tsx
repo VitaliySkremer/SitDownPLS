@@ -2,12 +2,23 @@
 import styles from './Product.module.scss'
 import {Button} from "../UI/Button/Button";
 import { IProductFetch } from '../../Hooks/useGetProducts';
+import {productsSlice} from "../../Store/reducers/ProductsSlice";
+import {useAppDispatch} from "../../Hooks/redux";
+import {useState} from "react";
 interface IProduct {
   product: IProductFetch;
   sale?: boolean
 }
 
 export const Product = ({product, sale = false}:IProduct) => {
+  const [bought, setBought] = useState(false);
+  const {addProduct} = productsSlice.actions;
+  const dispatch = useAppDispatch();
+
+  const handlerClick = () =>{
+    dispatch(addProduct(product));
+    setBought(true);
+  }
   return (
     <div className={styles.product}>
       <img className={styles.img} src={product.images[0]} alt={product.title}/>
@@ -16,8 +27,11 @@ export const Product = ({product, sale = false}:IProduct) => {
         <span className={styles.price}>{(product.price).toFixed(2)}$</span>
         <span className={styles.price_old}>{Math.round(product.price * 1.1).toFixed(2)}$</span>
       </div>
-      <div>
-        <Button pSmall={true}>Купить</Button>
+      <div className={styles.bought__status}>
+        <Button onClick={handlerClick} pSmall={true}>Купить</Button>
+        {bought && (
+          <p>Добавлено</p>
+        )}
       </div>
       {sale
         ? <div className={styles.sale}>-10%</div>

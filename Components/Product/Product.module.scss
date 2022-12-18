@@ -74,3 +74,12 @@
     margin-right: 7px;
   }
 }
+
+.bought__status {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    color: var(--secondary);
+  }
+}
