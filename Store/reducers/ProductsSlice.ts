@@ -21,7 +21,7 @@ export const productsSlice = createSlice({
   reducers: {
     addProduct(state, action: PayloadAction<IProduct>){
       state.products = [...state.products, action.payload]
-    }
+    },
   }
 })
 

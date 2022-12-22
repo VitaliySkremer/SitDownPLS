@@ -1,0 +1,13 @@
+@import "styles/Mixins.scss";
+
+.cart__list{
+  @include reset-list;
+
+  &_item {
+    padding: 15px;
+  }
+
+  &_item:not(:last-child) {
+    border-bottom: 1px solid var(--primary);
+  }
+}

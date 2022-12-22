@@ -1,14 +1,14 @@
-import {ReactNode} from "react";
+import {HTMLAttributes, ReactNode} from "react";
 import styles from "./CheckBox.module.scss"
 
-interface ICheckBoxProps {
-  children:ReactNode;
+interface ICheckBoxProps extends HTMLAttributes<HTMLLabelElement>{
+  children?:ReactNode;
 }
 
-export const CheckBox = ({children}:ICheckBoxProps) => {
+export const CheckBox = ({children, ...other}:ICheckBoxProps) => {
   return (
-    <label className={styles.label}>
-      <input className={styles.input} type='checkbox'></input>
+    <label className={styles.label} {...other}>
+      <input className={styles.input} type='checkbox'/>
       <span className={styles.label__text}>
         {children}
       </span>

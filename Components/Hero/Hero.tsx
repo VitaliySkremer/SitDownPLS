@@ -1,4 +1,3 @@
-import styles from './Hero.module.scss'
 import {HeroSwiper} from "./HeroSwiper";
 
 export interface ISwipes {
@@ -16,7 +15,7 @@ const Swipes:ISwipes[] = [
 
 export const Hero = () => {
   return (
-    <section className={['section', styles.hero].join(' ')}>
+    <section className='section'>
       <HeroSwiper Swipes={Swipes}/>
     </section>
   )

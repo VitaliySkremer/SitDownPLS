@@ -1,4 +1,8 @@
 @import "styles/Mixins";
+.header__wrapper {
+  margin-bottom: 32px;
+}
+
 .header {
   display: flex;
   flex-direction: column-reverse;
@@ -103,7 +107,7 @@
   }
 
   &_basket {
-    @include btn-reset;
+    @include link-reset;
 
     display: flex;
     align-items: center;

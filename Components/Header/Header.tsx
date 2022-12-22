@@ -4,7 +4,7 @@ import {HeaderMain} from "./HeaderMain";
 import {HeaderBottom} from "./HeaderBottom";
 export const Header = () => {
   return (
-    <header>
+    <header className={styles.header__wrapper}>
       <HeaderTitle/>
       <div className='container'>
         <HeaderMain/>

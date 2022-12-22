@@ -1,0 +1,20 @@
+.cart__wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "blockProducts blockProducts blockProducts blockPrice";
+}
+
+.cart__products_block {
+  grid-area: blockProducts;
+  background-color: var(--grey_light);
+  border-radius: 10px;
+}
+
+.cart__price_block {
+  grid-area: blockPrice;
+  background-color: var(--grey_light);
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=CartProducts.module.css.map */
