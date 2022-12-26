@@ -1,8 +1,8 @@
 .cart__wrapper {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-areas: 'blockProducts blockProducts blockProducts blockPrice';
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 'blockProducts blockProducts blockPrice';
 }
 
 .cart__products_block {
@@ -13,6 +13,4 @@
 
 .cart__price_block {
   grid-area: blockPrice;
-  background-color: var(--grey_light);
-  border-radius: 10px;
 }
