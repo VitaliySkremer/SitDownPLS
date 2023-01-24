@@ -1,5 +1,6 @@
 import styles from './CartProducts.module.scss'
 import {CartProductsList} from "./CartProductsList/CartProductsList";
+import {CartPrice} from "../CartPrice/CartPrice";
 export const CartProducts = () => {
   return (
     <section className='section'>
@@ -9,7 +10,7 @@ export const CartProducts = () => {
           <CartProductsList/>
         </div>
         <div className={styles.cart__price_block}>
-          Блок цен
+          <CartPrice/>
         </div>
       </div>
     </section>
