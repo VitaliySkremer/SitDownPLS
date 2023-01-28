@@ -9,13 +9,14 @@ interface IModalProps {
 
 export const Modal = ({setModal,children}:IModalProps) => {
 
-  const modalClick = () => {
-      setModal();
+  const modalClick = (event: React.MouseEvent) => {
+    setModal();
   }
 
   return (
-    <div onClick={modalClick} className={styles.modal__wrapper}>
-      <div onClick={event => event.stopPropagation()} className={styles.modal}>
+    <div className={styles.modal__wrapper}>
+      <div onClick={modalClick} className={styles.modal__backdoor}/>
+      <div className={styles.modal}>
         {children}
       </div>
     </div>
