@@ -3,4 +3,17 @@
   margin-bottom: 10px;
 }
 
+.form {
+  animation: start 0.3s 1 ease;
+}
+
+@keyframes start {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 /*# sourceMappingURL=AuthForm.module.css.map */

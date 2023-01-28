@@ -4,7 +4,7 @@ import {useAppSelector} from "../../Hooks/redux";
 import Link from "next/link";
 import {useState} from "react";
 import {Modal} from "../UI/Modal/Modal";
-import {AuthForm} from "../AuthForm/AuthForm";
+import {UserLogin} from "../UserLogin/UserLogin";
 const listDrops = [
   'Диваны', 'Кресла','Пуфы', 'Кровати', 'Тумбы','Комоды','Стулья','Столы','Аксессуары'
 ]
@@ -42,7 +42,7 @@ export const HeaderBottom = () => {
       </div>
       {isModal && (
         <Modal setModal={setModal}>
-          <AuthForm/>
+          <UserLogin/>
         </Modal>
       )}
     </div>

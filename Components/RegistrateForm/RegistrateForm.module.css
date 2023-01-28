@@ -1,17 +1,18 @@
-.name,
-.password{
+.input {
   margin-bottom: 10px;
 }
 
 .form {
-  animation: start .3s 1 ease;
+  animation: start 0.3s 1 ease;
 }
 
 @keyframes start {
-  0%{
+  0% {
     transform: translateX(200px);
   }
-  100%{
+  100% {
     transform: none;
   }
 }
+
+/*# sourceMappingURL=RegistrateForm.module.css.map */

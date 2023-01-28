@@ -14,8 +14,8 @@ export const AuthForm = () => {
     fetch('https://api.escuelajs.co/api/v1/auth/login',{
       method:'POST',
       body:JSON.stringify({
-        "email": "john@mail.com",
-        "password": "changeme"
+        "email": login,
+        "password": password
       }),
       headers:{
         "Content-Type": "application/json"
@@ -26,7 +26,7 @@ export const AuthForm = () => {
   }
 
   return (
-    <form onSubmit={handlerSubmit}>
+    <form className={styles.form} onSubmit={handlerSubmit}>
       <Input
         value={login}
         onChange={event=>setLogin(event.target.value)}
@@ -34,6 +34,7 @@ export const AuthForm = () => {
         className={styles.name}
       />
       <Input
+        type='password'
         value={password}
         onChange={event=>setPassword(event.target.value)}
         placeholder='Введите пароль'
