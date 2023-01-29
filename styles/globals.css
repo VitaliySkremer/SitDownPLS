@@ -84,4 +84,8 @@ main {
   flex-direction: column;
 }
 
+img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=globals.css.map */

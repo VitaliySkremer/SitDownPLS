@@ -1,10 +1,11 @@
-
 import styles from './Product.module.scss'
 import {Button} from "../UI/Button/Button";
 import { IProductFetch } from '../../Hooks/useGetProducts';
 import {productsSlice} from "../../Store/reducers/ProductsSlice";
 import {useAppDispatch} from "../../Hooks/redux";
 import {useState} from "react";
+import Link from "next/link";
+
 interface IProduct {
   product: IProductFetch;
   sale?: boolean
@@ -22,7 +23,7 @@ export const Product = ({product, sale = false}:IProduct) => {
   return (
     <div className={styles.product}>
       <img className={styles.img} src={product.images[0]} alt={product.title}/>
-      <p className={styles.title}>{product.title}</p>
+      <Link href={`product/${product.id}`} className={styles.title}>{product.title}</Link>
       <div className={styles.price__wrapper}>
         <span className={styles.price}>{(product.price).toFixed(2)}$</span>
         <span className={styles.price_old}>{Math.round(product.price * 1.1).toFixed(2)}$</span>

@@ -21,6 +21,21 @@
   font-size: 24px;
   line-height: 130%;
   margin: 0 0 23px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.title::after {
+  content: "";
+  width: 100%;
+  transform: scale(0);
+  height: 2px;
+  background-color: var(--black);
+  transition: transform 0.2s ease;
+}
+.title:hover::after {
+  transform: scale(1);
 }
 
 .price__wrapper {
