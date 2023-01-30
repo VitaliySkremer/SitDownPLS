@@ -17,7 +17,12 @@ export const FullProduct = ({id}:IFullProductProps) => {
         ? <Loader/>
         : <div className={styles.container}>
             <DescriptionProduct mainImg={product?.images[0]} arrImg={product?.images} title={product?.title} description={product?.description}/>
-            <CharacteristicProduct/>
+            <CharacteristicProduct
+              rating={4}
+              title={product?.title}
+              description={product?.description}
+              price={product?.price}
+            />
           </div>
       }
     </section>

@@ -1,0 +1,35 @@
+.column {
+  width: 50%;
+}
+
+.table {
+  width: 100%;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  color: var(--grey);
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  padding: 8px 0;
+}
+
+.td {
+  width: 50%;
+
+  &_wrapper {
+    display: flex;
+    align-items: flex-end;
+    & p {
+      margin: 0;
+    }
+  }
+}
+
+.dotted {
+  border-bottom: 1px dotted var(--grey);
+  width: 100%;
+}

@@ -7,7 +7,7 @@ import {useState} from "react";
 
 export const BestRating = () => {
   const [offset, setOffset] = useState(0);
-  const {products, isLoading} = useGetProducts(`https://api.escuelajs.co/api/v1/categories/3/products?offset=${offset}&limit=8`)
+  const {products, isLoading} = useGetProducts(`https://api.escuelajs.co/api/v1/products?offset=${offset}&limit=8`)
 
   return (
     <section className={['container','section',styles.best__wrapper].join(' ')}>

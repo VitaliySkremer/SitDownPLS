@@ -1,0 +1,13 @@
+.rating {
+  color: var(--gold);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+}
+.rating svg {
+  margin-right: 6px;
+}
+
+/*# sourceMappingURL=Rating.module.css.map */

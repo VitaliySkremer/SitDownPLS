@@ -8,7 +8,7 @@ import {useNavigateSwiper} from "../../Hooks/useNavigateSwiper";
 import {NavigateSwiper} from "../UI/NavigateSwiper/NavigateSwiper";
 
 export const Special = () => {
-  const {products, isLoading} = useGetProducts('https://api.escuelajs.co/api/v1/categories/3/products?offset=0&limit=6')
+  const {products, isLoading} = useGetProducts('https://api.escuelajs.co/api/v1/products?offset=0&limit=6')
   const {swiperRef, prevSlide, nextSlide} = useNavigateSwiper();
 
   return (
